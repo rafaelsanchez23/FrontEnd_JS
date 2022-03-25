@@ -12,7 +12,7 @@ body{
     height: 20px;
 }
 .buscar{
-    width: 130px;
+    width: 150px;
     height: 30px;
     font-size: 15px;
     background-color: rgb(255, 255, 255);
@@ -41,7 +41,7 @@ body{
 }
 .idnom{
     position: absolute;
-    left:127px;
+    left:125px;
     top:308px;
     font-size: 25px;
     font-weight: 900;
