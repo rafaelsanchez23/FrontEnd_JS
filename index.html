@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./pokedex.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="top">
+    <h1>Pokedex LaunchX </h1><br>
+    <h2>Coloca el nombre del Pokemon</h2>
+    <input type="text" placeholder="Nombre" id="pokeName" name="pokeName" class="txinput">
+    <button onclick="fetchPokemon()" class="buscar">Buscar</button>
+    </div>
+
+    <div class="fondo">
+        <div class="imag">
+            <img src="./pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+        </div>
+        <div class="idnom">
+            <p id="pokeIdNom"></p>
+        </div>
+        <div class="tamaño">
+            <p id="pokeTam"></p>
+        </div>
+        <div class="peso">
+            <p id="pokePes"></p>
+        </div>
+        <div class="tipo">
+            <p>
+                <label id="pokeTipo"></label> <img id="tipo1" src="./ico/nada.png" alt="tipo1" height="12" width="32"> <img id="tipo2" src="./ico/nada.png" alt="tipo2" height="12" width="32">
+            </p>
+        </div>
+        <div class="grafD">
+            <canvas id="graf" height="110px"></canvas>
+        </div>
+        <div id="pokemovi" class="movimientos">
+            <h2 id="Titmov" class="movtit"></h2>
+            <p id="pokeMovit"></p>
+        </div>
+        <div class="botonmov">
+            <button id="mos_ocu" type="button" onclick="mostrar_mov()" class="botoncs">Movimientos</button>
+        </div>
+    </div>    
+</body>
+<footer>
+    <script src="./pokedex.js"></script>    
+</footer>
+</html>
